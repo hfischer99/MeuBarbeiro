@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerAgendaFXML">
+   <children>
+      <AnchorPane prefHeight="440.0" prefWidth="699.0">
+         <children>
+            <TableView layoutX="12.0" layoutY="60.0" prefHeight="333.0" prefWidth="702.0">
+              <columns>
+                <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colCliente" prefWidth="108.0" text="Cliente" />
+                  <TableColumn fx:id="colBarbeiro" prefWidth="109.0" text="Barbeiro" />
+                  <TableColumn fx:id="colStatus" prefWidth="104.0" text="Status" />
+                  <TableColumn fx:id="colServico" prefWidth="103.0" text="Serviço" />
+                  <TableColumn fx:id="colHorario" prefWidth="107.0" text="Horario" />
+                  <TableColumn fx:id="colData" prefWidth="95.0" text="Data" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txData" layoutX="41.0" layoutY="24.0" promptText="Digite a data" />
+            <Text layoutX="13.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data:" />
+            <Button fx:id="btnOKData" layoutX="197.0" layoutY="24.0" mnemonicParsing="false" text="OK" />
+            <Button fx:id="btnInsereAgendamento" layoutX="12.0" layoutY="403.0" mnemonicParsing="false" text="Inserir agendamento" />
+            <Button fx:id="btnCancelaAgendamento" layoutX="144.0" layoutY="403.0" mnemonicParsing="false" text="Cancelar agendamento" />
+            <Button fx:id="btnAtualiza" layoutX="290.0" layoutY="403.0" mnemonicParsing="false" text="Atualizar" />
+            <Button fx:id="btnPesquisar" layoutX="615.0" layoutY="24.0" mnemonicParsing="false" text="Pesquisar" />
+            <Text layoutX="244.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do Cliente:" />
+            <TextField fx:id="txCliente" layoutX="338.0" layoutY="24.0" prefHeight="25.0" prefWidth="271.0" promptText="Digite aqui o nome do cliente..." />
+            <Button fx:id="btnSair" layoutX="649.0" layoutY="403.0" mnemonicParsing="false" onAction="#fechar" text="Sair" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
